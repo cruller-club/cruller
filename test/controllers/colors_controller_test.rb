@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class ColorsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -6,9 +6,13 @@ class ColorsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get about" do
-    get colors_about_url
+  test "should get show" do
+    get colors_show_url
     assert_response :success
   end
 
+  test "should get error" do
+    get colors_error_url
+    assert_response :success
+  end
 end

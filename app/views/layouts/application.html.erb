@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"  class="h-100">
-  <%= render partial: "shared/head" %>
+<html lang="en" class="h-100">
+  <%= render partial: 'shared/head' %>
 
   <body class="d-flex flex-column h-100">
-    <%= render partial: "shared/nav" %>
-
-    <!-- Begin page content -->
-    <main>
-      <%= yield :main %>
+    <%= render partial: 'shared/nav' %>
+    
+    <main class="flex-shrink-0">
+      <div class="container-fluid">
+        <%= yield %>
+      </div>
     </main>
 
-    <%= render partial: "shared/foot" %>
+    <%= render partial: 'shared/foot' %>
   </body>
-
-  <%= render partial: "shared/scripts" %>
-
-  </html>
+</html>

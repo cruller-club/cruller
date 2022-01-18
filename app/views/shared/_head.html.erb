@@ -1,28 +1,29 @@
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Cruller Club Application.">
   <meta name="author" content="Karim Said">
-  <meta name="description" content="cruller.club">
-
-  <title><%= "cruller.club" %><%= content_for?(:title) ?  " | #{content_for(:title)}" : "" %></title>
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nova+Mono" />
+  
+  <title>
+    cruller.club
+    <%= content_for?(:title) ?  " | #{content_for(:title)}" : "" %>
+  </title>
+  
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-  <!-- Font Awesome CDN -->
-  <script src="https://kit.fontawesome.com/ee8eeacd5b.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Righteous" />
 
-  <!-- Rails Asset Pipeline -->
-  <%= stylesheet_link_tag "application", media: "all" %>
-  <%= stylesheet_link_tag params[:controller] %>
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag params[:controller] %>
-
-  <%= csrf_meta_tags %>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The Rails Asset Pipeline -->
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
 </head>

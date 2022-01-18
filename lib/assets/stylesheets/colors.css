@@ -1,0 +1,24 @@
+main {
+  padding-top: 5.00em;
+}
+
+.card {
+  opacity: 0.30;
+}
+
+.card a, .meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-group li {
+  border: none;
+}
+
+.fancy {
+  font-family: "Righteous";
+}
+
+.lead {
+  font-size: 2.00em;
+}
