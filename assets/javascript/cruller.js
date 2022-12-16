@@ -79,7 +79,7 @@ function paint(cruller) {
   );
 
   $("#beaukeh-link").html(
-    `<a href="https://beaukeh.cruller.club/static/${cruller["hex"]}" target=_blank>
+    `<a href="https://beaukeh.cruller.club/?c=${cruller["hex"]}" target=_blank>
       <i class="fa-regular fa-circle-exclamation"></i>
     </a>`
   );
