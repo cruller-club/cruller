@@ -1,3 +1,3 @@
-# cruller.club
+# cruller-er
 
 Random colors for everyone!
