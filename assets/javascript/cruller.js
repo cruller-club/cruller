@@ -73,7 +73,7 @@ function paint(cruller) {
   $("#meta-link").html(
     `<a href="/?c=${cruller["hex"]}" title="#${cruller["hex"]}">
       <div style="color: #${meta_color}; opacity: 0.50;">
-        <i class="fa-regular fa-link"></i> https://cruller.club?c=${cruller["hex"]}
+        <i class="fa-regular fa-link"></i> https://er.cruller.club?c=${cruller["hex"]}
       </div>
     </a>`
   );
